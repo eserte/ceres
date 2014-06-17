@@ -729,7 +729,7 @@ def recalculateSeries(values, old_timeStep, new_timeStep):
     if sub_arr:
         new_values.append(reduce(lambda x, y: x + y, sub_arr)/(len(sub_arr)*1.0))
     else:
-        new_values.append(0)
+        new_values.append(None)
   return new_values
 
 def getTree(path):
